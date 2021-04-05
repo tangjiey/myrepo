@@ -1,16 +1,18 @@
 ---
-title: "STA303/1002: Mixed assessment 1"
-subtitle: "Starship crew analysis"
-author: "Chief Science Officer [Jieyi Tang]; ID: [1005288118]"
+title: 'STA303/1002: Mixed assessment 1'
+author: 'Chief Science Officer [Jieyi Tang]; ID: [1005288118]'
+subtitle: Starship crew analysis
 output:
+  html_document:
+    df_print: paged
   pdf_document: default
 urlcolor: blue
-header-includes:    
-  - \usepackage{lastpage}
-  - \usepackage{fancyhdr}
-  - \pagestyle{fancy}
-  - \fancyhead[LO, LE]{[Jieyi Tang], [1005288118]}
-  - \fancyfoot[CO, CE]{\thepage \ of \pageref{LastPage}}
+header-includes:
+- \usepackage{lastpage}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[LO, LE]{[Jieyi Tang], [1005288118]}
+- \fancyfoot[CO, CE]{\thepage \ of \pageref{LastPage}}
 ---
 
 | Information                         | Note                                                                                                                                                                                                       |
@@ -93,7 +95,6 @@ knitr::opts_chunk$set(eval = TRUE)
 ```{r, getdata, eval=TRUE}
 # put your student ID in here
 get_my_starship(1005288118)
-
 # after you run this function, your unique dataset will appear in the environment
 # it will be called crew_data
 ```
